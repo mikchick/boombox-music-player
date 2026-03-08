@@ -168,12 +168,11 @@ for(let d=1920;d<=2020;d+=10)DECADES.push(d);
    STATE
 ════════════════════════════════════════════ */
 /* Audio source map — keyed by track title */
-const AUDIO_SRC={
-  'Plastic Love':'audio/Mariya_Takeuchi_-_Plastic_Love_(mp3.pm).mp3',
-  'Gloom':'audio/07 Gloom MIX_14.m4a',
-  'Surface':'audio/surface FINAL MASTER_5.m4a',
-  'The Spins':'audio/Mac Miller - The Spins Lyrics.mp3',
-};
+const AUDIO_SRC = {
+  'Plastic Love': 'audio/Mariya_Takeuchi_-_Plastic_Love_(mp3.pm).mp3',
+  'Gloom': 'audio/07 Gloom MIX_14.m4a',
+  'Surface': 'audio/surface FINAL MASTER_5.m4a',
+  'The Spins': 'audio/Mac Miller - The Spins Lyrics.mp3',
 };
 /* YouTube video IDs — keyed by track title */
 const YT_SRC={
@@ -1326,5 +1325,6 @@ document.querySelectorAll('.eqch').forEach(c=>c.addEventListener('click',()=>{
   document.querySelectorAll('.eqch').forEach(x=>x.classList.remove('on'));
   c.classList.add('on');vib(8);
 }));
+
 
 
