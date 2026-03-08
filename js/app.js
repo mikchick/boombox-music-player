@@ -671,7 +671,18 @@ if (src) {
   S.hasRealAudio = true;
 
   aud.src = src.split('/').map(encodeURIComponent).join('/');
+  aud.muted = false;
+  aud.volume = 1;
+  aud.preload = "auto";
+
   aud.load();
+
+  aud.addEventListener("canplay", () => {
+    if (S.isPlaying) {
+      aud.play().catch(err => console.error("audio play failed:", err));
+    }
+  }, { once: true });
+}
 
   const offset = TRACK_START[tr.t] || 0;
   if (offset) {
@@ -1349,6 +1360,7 @@ document.querySelectorAll('.eqch').forEach(c=>c.addEventListener('click',()=>{
   document.querySelectorAll('.eqch').forEach(x=>x.classList.remove('on'));
   c.classList.add('on');vib(8);
 }));
+
 
 
 
