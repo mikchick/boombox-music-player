@@ -169,19 +169,12 @@ for(let d=1920;d<=2020;d+=10)DECADES.push(d);
 ════════════════════════════════════════════ */
 /* Audio source map — keyed by track title */
 const AUDIO_SRC={
-  'Pass the Dutchie':'audio/Pass The Dutchie.mp3',
+  const AUDIO_SRC={
   'Plastic Love':'audio/Mariya_Takeuchi_-_Plastic_Love_(mp3.pm).mp3',
-  'Black':'audio/Pearl_Jam_-_Black_(mp3.pm).mp3',
-  'Move Your Body':'audio/Marshall Jefferson x Solardo - Move Your Body [Ultra Records].mp3',
-  'Ride on Time':'audio/Tatsuro Yamashita - Ride on Time (1982) (single ver.).mp3',
-  'Gloom':'audio/07 Gloom MIX_14.wav',
-  'Surface':'audio/surface FINAL MASTER_5.wav',
-  'Moon Undah Water':'audio/Puma_Blue_-_Moon_Undah_Water_(mp3.pm).mp3',
-  'London Calling':'audio/London Calling (Remastered)(MP3_160K).mp3',
-  'Latch':'audio/Disclosure - Latch ft. Sam Smith.mp3',
-  'Tennis Court':'audio/Lorde_-_Tennis_Court_Flume_Remix_(mp3.pm).mp3',
-  'Heart-Shaped Box':'audio/Nirvana_-_Heart-Shaped_Box_(mp3.pm).mp3',
-  'The Spins':'audio/Mac Miller - The Spins  Lyrics.mp3',
+  'Gloom':'audio/07 Gloom MIX_14.m4a',
+  'Surface':'audio/surface FINAL MASTER_5.m4a',
+  'The Spins':'audio/Mac Miller – The Spins Lyrics.mp3',
+};
 };
 /* YouTube video IDs — keyed by track title */
 const YT_SRC={
@@ -1334,3 +1327,4 @@ document.querySelectorAll('.eqch').forEach(c=>c.addEventListener('click',()=>{
   document.querySelectorAll('.eqch').forEach(x=>x.classList.remove('on'));
   c.classList.add('on');vib(8);
 }));
+
